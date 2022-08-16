@@ -129,6 +129,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# aaa
+
 # STATIC_URL の直下で追加
 MEDIA_URL = '/media/' # 追加
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # 追加
