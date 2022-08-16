@@ -129,7 +129,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# aaa
+# aaa bbb
 
 # STATIC_URL の直下で追加
 MEDIA_URL = '/media/' # 追加
