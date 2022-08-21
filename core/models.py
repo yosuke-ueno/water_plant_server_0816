@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 class WaterPlants(models.Model):
@@ -14,7 +15,8 @@ class WaterPlants(models.Model):
     )
     name = models.CharField(max_length=120)
     position = models.CharField(max_length=50)
-    picture = models.FileField()
+    # picture = CloudinaryField('picture', blank=True, null=True, folder="media/")
+    picture = models.ImageField(upload_to='media/')
     difficulty = models.CharField(choices=DIFFICULTY_LEVELS, max_length=10)
     addition_amount = models.CharField(choices=CARBON_DIOXIDE, max_length=10)
     leaf_length = models.PositiveIntegerField()
