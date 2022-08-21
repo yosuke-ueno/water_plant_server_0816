@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'rest_framework', # 追加
     'corsheaders', # 追加
     'core', # 追加
-    'cloudinary_storage', # 追加
     'cloudinary', # 追加
+    'cloudinary_storage', # 追加
 ]
 
 MIDDLEWARE = [
